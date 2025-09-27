@@ -365,7 +365,9 @@ export const SuikaMarketplaceLanding: React.FC = () => {
           </Container>
         </SortableContainer>
 
-        <SortableContainer dndKitId="02d769fe-8ae6-427e-8e76-fd8c6bf0275f" containerType="regular" prevTag="section" id="how-it-works" className="border-t border-[#E9E3D8]" data-magicpath-id="155" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="02d769fe-8ae6-427e-8e76-fd8c6bf0275f" containerType="regular" prevTag="section" id="how-it-works" className="border-t border-[#E9E3D8]" data-magicpath-id="155" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+        display: "none"
+      }}>
           <Container className="py-10 md:py-16" data-magicpath-id="156" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <SectionTitle eyebrow="How SUIka works" title="A simple, transparent flow" subtitle="From project creation to impact verification, every step is recorded for accountability." data-magicpath-id="157" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
             <SortableContainer dndKitId="e5941d1a-6c99-4589-b32c-c4c952d18e49" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-3 gap-4 md:gap-6" data-magicpath-id="158" data-magicpath-path="SuikaMarketplaceLanding.tsx">
@@ -401,9 +403,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                   <div className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="184" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     For NGOs and Donors
                   </div>
-                  <h3 className={cn('mt-3 text-2xl md:text-3xl font-semibold', beigeText)} data-magicpath-id="185" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                    Join SUIka’s trusted marketplace today
-                  </h3>
+                  <h3 className={cn('mt-3 text-2xl md:text-3xl font-semibold', beigeText)} data-magicpath-id="185" data-magicpath-path="SuikaMarketplaceLanding.tsx">Join SUISTAINABLES trusted marketplace today</h3>
                   <p className={cn('mt-3 text-sm md:text-base', muted)} data-magicpath-id="186" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     NGOs: publish dynamic, transparent projects. Donors: fund with confidence and follow impact in real time.
                   </p>
