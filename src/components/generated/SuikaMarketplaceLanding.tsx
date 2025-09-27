@@ -210,7 +210,9 @@ export const SuikaMarketplaceLanding: React.FC = () => {
               </SortableContainer>
 
               <SortableContainer dndKitId="29469f3b-8fa7-4e4c-8008-be54b55f1e98" containerType="regular" prevTag="div" className="relative" data-magicpath-id="78" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                <SortableContainer dndKitId="1f8e46c6-0119-424e-a51b-5a0f9787f14b" containerType="regular" prevTag="div" className={cn('rounded-2xl border shadow-sm p-4 md:p-6', card, cardBorder)} role="region" aria-label="Featured project preview" data-magicpath-id="79" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                <SortableContainer dndKitId="1f8e46c6-0119-424e-a51b-5a0f9787f14b" containerType="regular" prevTag="div" className={cn('rounded-2xl border shadow-sm p-4 md:p-6', card, cardBorder)} role="region" aria-label="Featured project preview" data-magicpath-id="79" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                display: "none"
+              }}>
                   <SortableContainer dndKitId="19a70cc6-05b9-4600-b424-356d71c308dc" containerType="regular" prevTag="div" className="flex items-start justify-between gap-4" data-magicpath-id="80" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     <SortableContainer dndKitId="a7bad977-c75c-4d0b-8f83-284e99ea0632" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="81" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1200&auto=format&fit=crop" alt="NGO volunteers distributing aid" className="h-12 w-12 rounded-xl object-cover" data-magicpath-id="82" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
