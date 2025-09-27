@@ -8,14 +8,15 @@ import { useIsMobile } from '../../hooks/use-mobile';
 // @component: SuikaMarketplaceLanding
 export const SuikaMarketplaceLanding: React.FC = () => {
   const isMobile = useIsMobile();
-  const beige = 'bg-[#F8F4ED]';
-  const beigeText = 'text-[#3A2F27]';
-  const softGreen = 'text-[#2F8F6B]';
-  const softGreenBg = 'bg-[#DDF3EA]';
-  const accent = 'text-[#1F6B51]';
-  const card = 'bg-white/90';
-  const cardBorder = 'border-[#E9E3D8]';
-  const muted = 'text-[#6B5E54]';
+  // Replace flat colors with modern gradient-based identity
+  const beige = 'bg-[linear-gradient(135deg,_#F8F4ED_0%,_#EEF7F2_35%,_#E9F0FF_100%)]';
+  const beigeText = 'text-[#1d1b19]';
+  const softGreen = 'text-[color(display-p3_0.16_0.46_0.36)]';
+  const softGreenBg = 'bg-[linear-gradient(135deg,_#DDF3EA_0%,_#E6F7F1_60%,_#F0FFFA_100%)]';
+  const accent = 'text-[color(display-p3_0.12_0.41_0.32)]';
+  const card = 'bg-white/85 backdrop-blur-sm';
+  const cardBorder = 'border-[#E4E8F0]';
+  const muted = 'text-[#5a5956]';
   const Container: React.FC<React.PropsWithChildren<{
     className?: string;
   }>> = ({
@@ -31,16 +32,16 @@ export const SuikaMarketplaceLanding: React.FC = () => {
     title,
     subtitle,
     children
-  }) => <SortableContainer dndKitId="5fbd7927-bbdc-4ac2-b9ef-7c21a4f72d72" containerType="regular" prevTag="div" className="space-y-6" data-magicpath-id="1" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-      {eyebrow ? <SortableContainer dndKitId="a210ac57-6eb9-4d77-beff-0947cdee7813" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="2" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+  }) => <SortableContainer dndKitId="d43d3383-21aa-445b-8b9e-a547e3ce61ba" containerType="regular" prevTag="div" className="space-y-6" data-magicpath-id="1" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      {eyebrow ? <SortableContainer dndKitId="0265ebbb-bb0a-4c35-8a7f-d326c9f8c626" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} style={{
       display: "none"
-    }}>
+    }} data-magicpath-id="2" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Sparkles className="h-4 w-4" aria-hidden />
-          <span data-magicpath-id="3" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+          <span style={{
         display: "none"
-      }}>{eyebrow}</span>
+      }} data-magicpath-id="3" data-magicpath-path="SuikaMarketplaceLanding.tsx">{eyebrow}</span>
         </SortableContainer> : null}
-      <SortableContainer dndKitId="04207f88-5344-401a-bee1-1cadc201143d" containerType="regular" prevTag="div" data-magicpath-id="4" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      <SortableContainer dndKitId="f11c85df-0b64-4164-b19f-7f67cd3c348e" containerType="regular" prevTag="div" data-magicpath-id="4" data-magicpath-path="SuikaMarketplaceLanding.tsx">
         <h2 className={cn('text-2xl md:text-4xl font-semibold tracking-tight', beigeText)} data-magicpath-id="5" data-magicpath-path="SuikaMarketplaceLanding.tsx">{title}</h2>
         {subtitle ? <p className={cn('mt-3 text-base md:text-lg', muted)} data-magicpath-id="6" data-magicpath-path="SuikaMarketplaceLanding.tsx">{subtitle}</p> : null}
       </SortableContainer>
@@ -54,10 +55,10 @@ export const SuikaMarketplaceLanding: React.FC = () => {
     label,
     value,
     icon
-  }) => <SortableContainer dndKitId="4ea1367c-8d7f-4dd5-be92-9ac36efe1458" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4 md:p-6', card, cardBorder)} data-magicpath-id="7" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-      <SortableContainer dndKitId="900943b7-65c8-47f1-a817-9ffe848e45fb" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="8" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+  }) => <SortableContainer dndKitId="2fa3b2ba-f967-460e-8cbe-3238c067893b" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4 md:p-6', card, cardBorder)} data-magicpath-id="7" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      <SortableContainer dndKitId="b4ad4111-b6a5-4ac7-9705-85dab1e78466" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="8" data-magicpath-path="SuikaMarketplaceLanding.tsx">
         <div className={cn('rounded-lg p-2', softGreenBg)} data-magicpath-id="9" data-magicpath-path="SuikaMarketplaceLanding.tsx">{icon}</div>
-        <SortableContainer dndKitId="db4f4210-bc3e-47da-b8f5-0ce348853f39" containerType="regular" prevTag="div" data-magicpath-id="10" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="debf5406-a8ff-4de5-983a-b3f55b64c4d2" containerType="regular" prevTag="div" data-magicpath-id="10" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <div className={cn('text-2xl md:text-3xl font-bold', beigeText)} data-magicpath-id="11" data-magicpath-path="SuikaMarketplaceLanding.tsx">{value}</div>
           <div className={cn('text-sm', muted)} data-magicpath-id="12" data-magicpath-path="SuikaMarketplaceLanding.tsx">{label}</div>
         </SortableContainer>
@@ -71,12 +72,12 @@ export const SuikaMarketplaceLanding: React.FC = () => {
     title,
     description,
     icon
-  }) => <SortableContainer dndKitId="dd1340b5-dec4-43f4-b921-098035defa64" containerType="regular" prevTag="motion.div" whileHover={{
+  }) => <SortableContainer dndKitId="3eb9d7a6-9783-4246-82c5-303e7fc9e879" containerType="regular" prevTag="motion.div" whileHover={{
     y: -4
   }} className={cn('rounded-2xl border p-5 md:p-6 h-full', card, cardBorder)} data-magicpath-id="13" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-      <SortableContainer dndKitId="fa466e3a-8ac6-4478-9e54-d33b0dad0b32" containerType="regular" prevTag="div" className="flex items-start gap-4" data-magicpath-id="14" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      <SortableContainer dndKitId="d899f524-5f1a-4fe2-8aca-461e9db5a31f" containerType="regular" prevTag="div" className="flex items-start gap-4" data-magicpath-id="14" data-magicpath-path="SuikaMarketplaceLanding.tsx">
         <div className={cn('rounded-xl p-3', softGreenBg)} data-magicpath-id="15" data-magicpath-path="SuikaMarketplaceLanding.tsx">{icon}</div>
-        <SortableContainer dndKitId="851c5923-d270-470b-896c-82a6c6201344" containerType="regular" prevTag="div" data-magicpath-id="16" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="89cbaeb4-ea35-4930-909a-ad381697610d" containerType="regular" prevTag="div" data-magicpath-id="16" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <h3 className={cn('text-lg font-semibold', beigeText)} data-magicpath-id="17" data-magicpath-path="SuikaMarketplaceLanding.tsx">{title}</h3>
           <p className={cn('mt-2 text-sm leading-relaxed', muted)} data-magicpath-id="18" data-magicpath-path="SuikaMarketplaceLanding.tsx">{description}</p>
         </SortableContainer>
@@ -88,9 +89,9 @@ export const SuikaMarketplaceLanding: React.FC = () => {
   }> = ({
     label,
     value
-  }) => <SortableContainer dndKitId="aa6ce51b-4f28-422f-9cad-fa2279f27d22" containerType="regular" prevTag="div" className={cn('flex items-center justify-between gap-4 rounded-xl border px-4 py-2 text-sm', card, cardBorder, 'min-w-[180px]')} data-magicpath-id="19" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+  }) => <SortableContainer dndKitId="87020cca-e75a-48d5-8951-26345395c696" containerType="regular" prevTag="div" className={cn('flex items-center justify-between gap-4 rounded-xl border px-4 py-2 text-sm', card, cardBorder, 'min-w-[180px]')} style={{
     display: "none"
-  }}>
+  }} data-magicpath-id="19" data-magicpath-path="SuikaMarketplaceLanding.tsx">
       <span className={cn('font-medium', beigeText)} data-magicpath-id="20" data-magicpath-path="SuikaMarketplaceLanding.tsx">{label}</span>
       <span className={cn('font-semibold', softGreen)} data-magicpath-id="21" data-magicpath-path="SuikaMarketplaceLanding.tsx">{value}</span>
     </SortableContainer>;
@@ -108,27 +109,27 @@ export const SuikaMarketplaceLanding: React.FC = () => {
     const statusStyles = status === 'complete' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : status === 'verifying' ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-sky-50 text-sky-700 border-sky-200';
     const statusLabel = status === 'complete' ? 'Completed' : status === 'verifying' ? 'Awaiting verification' : 'Funding';
     const StatusIcon = status === 'complete' ? <CheckCircle2 className="h-4 w-4" data-magicpath-id="22" data-magicpath-path="SuikaMarketplaceLanding.tsx" /> : status === 'verifying' ? <Award className="h-4 w-4" data-magicpath-id="23" data-magicpath-path="SuikaMarketplaceLanding.tsx" /> : <TrendingUp className="h-4 w-4" data-magicpath-id="24" data-magicpath-path="SuikaMarketplaceLanding.tsx" />;
-    return <SortableContainer dndKitId="f6b6ef3f-0be4-4d0e-86aa-2fe248e442c4" containerType="regular" prevTag="div" className={cn('flex flex-col gap-3 rounded-xl border p-4', 'bg-white/90', cardBorder)} data-magicpath-id="25" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-        <SortableContainer dndKitId="e3b50b28-515b-4a1e-aec2-ca36b95d2bac" containerType="regular" prevTag="div" className="flex items-center justify-between gap-3" data-magicpath-id="26" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-          <SortableContainer dndKitId="311ff354-fb86-4fdd-8df5-977055d75194" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="27" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-            <SortableContainer dndKitId="0eb6f18e-bdf1-41e9-a2e6-0ef4f4e60d2c" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full border px-2.5 py-1 text-xs', statusStyles)} data-magicpath-id="28" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+    return <SortableContainer dndKitId="f7a02907-b2bd-4d18-ba2b-2d4cacb42f80" containerType="regular" prevTag="div" className={cn('flex flex-col gap-3 rounded-xl border p-4', 'bg-white/90', cardBorder)} data-magicpath-id="25" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="570088f2-37dd-48dc-8df0-cb44107e2111" containerType="regular" prevTag="div" className="flex items-center justify-between gap-3" data-magicpath-id="26" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          <SortableContainer dndKitId="c25945d0-3d9c-40cf-8c93-ee15b6f5d5d6" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="27" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="5e13fc36-d000-4d7f-9854-963dfca0752f" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full border px-2.5 py-1 text-xs', statusStyles)} data-magicpath-id="28" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               {StatusIcon}
               <span className="font-medium" data-magicpath-id="29" data-magicpath-path="SuikaMarketplaceLanding.tsx">{statusLabel}</span>
             </SortableContainer>
           </SortableContainer>
-          {date ? <SortableContainer dndKitId="6fc85b2c-dfec-4730-b068-b4dcfaa1b2eb" containerType="regular" prevTag="div" className={cn('flex items-center gap-2 text-xs', muted)} data-magicpath-id="30" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          {date ? <SortableContainer dndKitId="48976917-6192-4268-9496-586a366aab20" containerType="regular" prevTag="div" className={cn('flex items-center gap-2 text-xs', muted)} data-magicpath-id="30" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <Calendar className="h-4 w-4" data-magicpath-id="31" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <span data-magicpath-id="32" data-magicpath-path="SuikaMarketplaceLanding.tsx">{date}</span>
             </SortableContainer> : null}
         </SortableContainer>
-        <SortableContainer dndKitId="427697df-0599-42fd-bfb3-862a1a619568" containerType="regular" prevTag="div" className="flex items-center justify-between" data-magicpath-id="33" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-          <SortableContainer dndKitId="1d88a9d1-3ffc-4645-9467-d71c0902d818" containerType="regular" prevTag="div" data-magicpath-id="34" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="d17266b4-b668-46d0-a54f-1ac745a764b4" containerType="regular" prevTag="div" className="flex items-center justify-between" data-magicpath-id="33" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          <SortableContainer dndKitId="9743f825-3259-4baa-873c-45ef35c33459" containerType="regular" prevTag="div" data-magicpath-id="34" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <div className={cn('font-semibold', beigeText)} data-magicpath-id="35" data-magicpath-path="SuikaMarketplaceLanding.tsx">{title}</div>
             <div className={cn('text-sm', muted)} data-magicpath-id="36" data-magicpath-path="SuikaMarketplaceLanding.tsx">Milestone budget</div>
           </SortableContainer>
-          <SortableContainer dndKitId="4dbc686a-a6cc-487b-a0b8-1b95db2c3e53" containerType="regular" prevTag="div" className={cn('text-right')} data-magicpath-id="37" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          <SortableContainer dndKitId="98768234-adb6-46c6-973e-dab75363474c" containerType="regular" prevTag="div" className={cn('text-right')} data-magicpath-id="37" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <div className={cn('font-bold', softGreen)} data-magicpath-id="38" data-magicpath-path="SuikaMarketplaceLanding.tsx">{amount}</div>
-            <SortableContainer dndKitId="39ead281-df51-4e13-9969-434b2a0a1407" containerType="regular" prevTag="button" className={cn('mt-1 inline-flex items-center gap-1 text-xs font-medium', accent)} data-magicpath-id="39" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="0ebdc3ce-22c3-45a7-89d7-a60b2860c07c" containerType="regular" prevTag="button" className={cn('mt-1 inline-flex items-center gap-1 text-xs font-medium', accent)} data-magicpath-id="39" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               See details <ArrowUpRight className="h-3.5 w-3.5" data-magicpath-id="40" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
             </SortableContainer>
           </SortableContainer>
@@ -137,25 +138,25 @@ export const SuikaMarketplaceLanding: React.FC = () => {
   };
 
   // @return
-  return <SortableContainer dndKitId="75dce704-e847-4c74-85e6-6455a2ee3235" containerType="regular" prevTag="div" className={cn('w-full min-h-dvh', beige)} data-magicpath-id="41" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-      <SortableContainer dndKitId="affad9d9-11a3-4bc1-8bea-4ca514d5619f" containerType="regular" prevTag="header" className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/80 border-b border-[#E9E3D8]" data-magicpath-id="42" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+  return <SortableContainer dndKitId="4daa64a3-1218-41d7-948f-2c2350ecaab4" containerType="regular" prevTag="div" className={cn('w-full min-h-dvh', beige)} data-magicpath-id="41" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      <SortableContainer dndKitId="8af14591-95b2-4e9e-af42-f34ce0569833" containerType="regular" prevTag="header" className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/40 bg-white/60 border-b border-[#E4E8F0]" data-magicpath-id="42" data-magicpath-path="SuikaMarketplaceLanding.tsx">
         <Container className="flex h-16 md:h-20 items-center justify-between" data-magicpath-id="43" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-          <SortableContainer dndKitId="bad33885-d1ed-4e61-8207-d66ac15b2098" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="44" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-            <SortableContainer dndKitId="bb201ff8-6fcd-4470-9271-2cf886e83940" containerType="regular" prevTag="div" className={cn('h-9 w-9 rounded-xl flex items-center justify-center', softGreenBg)} aria-hidden data-magicpath-id="45" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+          <SortableContainer dndKitId="65ed39fe-2d40-4a0c-964c-67347729db5c" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="44" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="a75c6d26-dd49-48d8-ba0c-c7cabee319cf" containerType="regular" prevTag="div" className={cn('h-9 w-9 rounded-xl flex items-center justify-center', softGreenBg)} aria-hidden style={{
             display: "none"
-          }}>
-              <HeartHandshake className={cn('h-5 w-5', accent)} data-magicpath-id="46" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+          }} data-magicpath-id="45" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+              <HeartHandshake className={cn('h-5 w-5', accent)} style={{
               display: "none"
-            }} />
+            }} data-magicpath-id="46" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
             </SortableContainer>
-            <SortableContainer dndKitId="3c6f05c5-3dd9-4d2b-9c57-199a0ca66057" containerType="regular" prevTag="div" className="flex flex-col leading-tight" data-magicpath-id="47" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="2badaaeb-b0b9-49a2-bbb0-85b8694199cf" containerType="regular" prevTag="div" className="flex flex-col leading-tight" data-magicpath-id="47" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <span className={cn('text-lg md:text-xl font-semibold tracking-tight', beigeText)} data-magicpath-id="48" data-magicpath-path="SuikaMarketplaceLanding.tsx">Suistainables
             </span>
               <span className={cn('text-[11px] md:text-xs', muted)} data-magicpath-id="49" data-magicpath-path="SuikaMarketplaceLanding.tsx">Humanitarian Marketplace</span>
             </SortableContainer>
           </SortableContainer>
 
-          <SortableContainer dndKitId="914fcf9e-c1f8-4857-bab0-553d2a0a8188" containerType="regular" prevTag="nav" className="hidden md:flex items-center gap-6" data-magicpath-id="50" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          <SortableContainer dndKitId="7d8cabed-cd00-4fbc-b72e-ea879dd62b9a" containerType="regular" prevTag="nav" className="hidden md:flex items-center gap-6" data-magicpath-id="50" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <a className={cn('text-sm font-medium hover:opacity-80', beigeText)} href="#projects" data-magicpath-id="51" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               Projects
             </a>
@@ -170,12 +171,12 @@ export const SuikaMarketplaceLanding: React.FC = () => {
             </a>
           </SortableContainer>
 
-          <SortableContainer dndKitId="da5a52de-3f51-4d6a-b52a-2a6c2ea9bf16" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="55" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-            <SortableContainer dndKitId="35520c3c-7d2f-4ba5-a807-b6c661c04fac" containerType="regular" prevTag="button" className={cn('hidden md:inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium', cardBorder, beigeText)} data-magicpath-id="56" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          <SortableContainer dndKitId="f8876950-df8c-459b-9392-46d3c67980b3" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="55" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="56fdcea9-182a-419a-82d4-e7182f5323f2" containerType="regular" prevTag="button" className={cn('hidden md:inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium', cardBorder, beigeText)} data-magicpath-id="56" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <Search className="h-4 w-4" data-magicpath-id="57" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               Explore
             </SortableContainer>
-            <SortableContainer dndKitId="da2fffb5-3bbd-407c-a9ef-e52a4b022058" containerType="regular" prevTag="button" className={cn('inline-flex items-center gap-2 rounded-lg px-3 md:px-4 py-2 text-sm font-semibold shadow-sm', 'bg-[#1F6B51] text-white hover:bg-[#1a5b45]')} data-magicpath-id="58" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="52232024-8869-435c-b098-d2e3b7127d67" containerType="regular" prevTag="button" className={cn('inline-flex items-center gap-2 rounded-lg px-3 md:px-4 py-2 text-sm font-semibold shadow-sm', 'bg-[linear-gradient(135deg,_#15664f_0%,_#1F6B51_50%,_#29906F_100%)] text-white hover:brightness-110')} data-magicpath-id="58" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               Connect Wallet
               <ArrowRight className="h-4 w-4" data-magicpath-id="59" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
             </SortableContainer>
@@ -183,17 +184,17 @@ export const SuikaMarketplaceLanding: React.FC = () => {
         </Container>
       </SortableContainer>
 
-      <SortableContainer dndKitId="da13df6e-6ce2-4fbf-80d7-85a9cabc271d" containerType="regular" prevTag="main" data-magicpath-id="60" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-        <SortableContainer dndKitId="ed76dfea-b78b-4da9-ad85-2940f3c807eb" containerType="regular" prevTag="section" className="relative overflow-hidden" data-magicpath-id="61" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      <SortableContainer dndKitId="c7d18799-0c21-45d9-b79e-1e909e72c5d0" containerType="regular" prevTag="main" data-magicpath-id="60" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="75a58bc8-8677-4f8c-b645-a58496b71dae" containerType="regular" prevTag="section" className="relative overflow-hidden" data-magicpath-id="61" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Container className="py-10 md:py-16" data-magicpath-id="62" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-            <SortableContainer dndKitId="68b6475e-f78c-4541-8abe-3a9a99df1440" containerType="regular" prevTag="div" className="grid md:grid-cols-2 gap-8 md:gap-12 items-center" data-magicpath-id="63" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+            <SortableContainer dndKitId="691443c4-516c-417f-ab90-1f3fa9eb9362" containerType="regular" prevTag="div" className="grid md:grid-cols-2 gap-8 md:gap-12 items-center" style={{
             display: "flex",
             flexDirection: "row"
-          }}>
-              <SortableContainer dndKitId="09f8bfcc-8f0a-4314-8fa1-da7429b1d09f" containerType="regular" prevTag="div" data-magicpath-id="64" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                <div className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="65" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+          }} data-magicpath-id="63" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+              <SortableContainer dndKitId="04dd56ea-4cbc-4214-8013-f3988be5186b" containerType="regular" prevTag="div" data-magicpath-id="64" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                <div className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} style={{
                 display: "none"
-              }}>
+              }} data-magicpath-id="65" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                   Built on SUI • Dynamic Milestones • Verified Impact
                 </div>
                 <h1 className={cn('mt-4 text-3xl md:text-5xl font-semibold tracking-tight', beigeText)} data-magicpath-id="66" data-magicpath-path="SuikaMarketplaceLanding.tsx">
@@ -201,22 +202,22 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                 </h1>
                 <p className={cn('mt-4 text-base md:text-lg leading-relaxed', muted)} data-magicpath-id="67" data-magicpath-path="SuikaMarketplaceLanding.tsx">Suistainables is a decentralized marketplace where verified NGOs publish projects with dynamic milestones. Donors fund specific phases and journalists validate real-world outcomes—for radical transparency.</p>
 
-                <SortableContainer dndKitId="84bc63e4-a0d7-4364-aac7-ff04d497885d" containerType="regular" prevTag="div" className="mt-6 flex flex-col sm:flex-row gap-3" data-magicpath-id="68" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                <SortableContainer dndKitId="72487a75-3165-4a6a-95e8-6ea90b0f7872" containerType="regular" prevTag="div" className="mt-6 flex flex-col sm:flex-row gap-3" style={{
                 display: "none"
-              }}>
-                  <SortableContainer dndKitId="ee69e630-f9ea-4054-bb34-efae1fdd41c6" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm md:text-base font-semibold shadow-sm', 'bg-[#1F6B51] text-white hover:bg-[#1a5b45]')} data-magicpath-id="69" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+              }} data-magicpath-id="68" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="48679f22-f7b9-48ca-a85d-2df2bbbcd9d2" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm md:text-base font-semibold shadow-sm', 'bg-[#1F6B51] text-white hover:bg-[#1a5b45]')} data-magicpath-id="69" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     Start exploring projects
                     <ArrowRight className="h-4 w-4" data-magicpath-id="70" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                   </SortableContainer>
-                  <SortableContainer dndKitId="6194a1b2-a66b-437c-bc52-9e1688475c13" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm md:text-base font-semibold', cardBorder, beigeText)} data-magicpath-id="71" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="1ba47d91-46bb-4828-89ff-c035985ba7c4" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm md:text-base font-semibold', cardBorder, beigeText)} data-magicpath-id="71" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     <Play className="h-4 w-4" data-magicpath-id="72" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                     How SUIka works
                   </SortableContainer>
                 </SortableContainer>
 
-                <SortableContainer dndKitId="783aeecb-5144-49a0-88a8-7d4a130a09e1" containerType="regular" prevTag="div" className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3" data-magicpath-id="73" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                <SortableContainer dndKitId="0e34ef88-5f04-4d98-bcc1-f19a7f9cd335" containerType="regular" prevTag="div" className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3" style={{
                 display: "none"
-              }}>
+              }} data-magicpath-id="73" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                   <ProgressPill label="Active projects" value="128" data-magicpath-id="74" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                   <ProgressPill label="Funds raised" value="$4.7M" data-magicpath-id="75" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                   <ProgressPill label="Avg. verification time" value="5 days" data-magicpath-id="76" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
@@ -224,67 +225,67 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                 </SortableContainer>
               </SortableContainer>
 
-              <SortableContainer dndKitId="29469f3b-8fa7-4e4c-8008-be54b55f1e98" containerType="regular" prevTag="div" className="relative" data-magicpath-id="78" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                <SortableContainer dndKitId="1f8e46c6-0119-424e-a51b-5a0f9787f14b" containerType="regular" prevTag="div" className={cn('rounded-2xl border shadow-sm p-4 md:p-6', card, cardBorder)} role="region" aria-label="Featured project preview" data-magicpath-id="79" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+              <SortableContainer dndKitId="0c53e3a6-4f58-40f2-b688-e75b3305eaf6" containerType="regular" prevTag="div" className="relative" data-magicpath-id="78" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                <SortableContainer dndKitId="8c873882-854d-42d0-a3cd-d0378111d5a2" containerType="regular" prevTag="div" className={cn('rounded-2xl border shadow-sm p-4 md:p-6', card, cardBorder)} role="region" aria-label="Featured project preview" style={{
                 display: "none"
-              }}>
-                  <SortableContainer dndKitId="19a70cc6-05b9-4600-b424-356d71c308dc" containerType="regular" prevTag="div" className="flex items-start justify-between gap-4" data-magicpath-id="80" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                    <SortableContainer dndKitId="a7bad977-c75c-4d0b-8f83-284e99ea0632" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="81" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+              }} data-magicpath-id="79" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="47152c31-e80d-491e-a34d-2aa3268d6219" containerType="regular" prevTag="div" className="flex items-start justify-between gap-4" data-magicpath-id="80" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="a5ff12bc-8d51-4c33-80d9-2666fce054f4" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="81" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1200&auto=format&fit=crop" alt="NGO volunteers distributing aid" className="h-12 w-12 rounded-xl object-cover" data-magicpath-id="82" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-                      <SortableContainer dndKitId="626c95dc-f09a-460a-af18-43503289cefa" containerType="regular" prevTag="div" data-magicpath-id="83" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="e95faf21-3249-4f83-903b-210ed0366355" containerType="regular" prevTag="div" data-magicpath-id="83" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         <div className={cn('text-sm font-medium', muted)} data-magicpath-id="84" data-magicpath-path="SuikaMarketplaceLanding.tsx">Featured Project</div>
                         <div className={cn('text-base md:text-lg font-semibold', beigeText)} data-magicpath-id="85" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                           Clean Water for Kakuma Refugee Camp
                         </div>
                       </SortableContainer>
                     </SortableContainer>
-                    <SortableContainer dndKitId="a410be35-d825-43cd-b58b-65bfef2c8034" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs', softGreenBg, 'border-transparent', accent)} data-magicpath-id="86" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="82d518fc-881a-44ec-8ae4-c8fda9d2ab6a" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs', softGreenBg, 'border-transparent', accent)} data-magicpath-id="86" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <ShieldCheck className="h-4 w-4" data-magicpath-id="87" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       Verified NGO
                     </SortableContainer>
                   </SortableContainer>
 
-                  <SortableContainer dndKitId="0367a629-fa17-4b6e-9232-71858c78bdcd" containerType="regular" prevTag="div" className="mt-4 grid gap-4 md:grid-cols-2" data-magicpath-id="88" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                    <SortableContainer dndKitId="d8ad6e65-698a-4602-b2d1-6bfa9f5ee09f" containerType="regular" prevTag="div" className="space-y-3" data-magicpath-id="89" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="3fbfd678-85ce-4e5b-ad0f-65753351336a" containerType="regular" prevTag="div" className="mt-4 grid gap-4 md:grid-cols-2" data-magicpath-id="88" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="cb2a72fb-b7e9-41d9-93d2-d96b59f6b31c" containerType="regular" prevTag="div" className="space-y-3" data-magicpath-id="89" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <MilestoneItem title="Phase 1: Borehole drilling" amount="$35,000" status="complete" date="Mar 12" data-magicpath-id="90" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       <MilestoneItem title="Phase 2: Filtration units" amount="$28,500" status="verifying" date="Apr 02" data-magicpath-id="91" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       <MilestoneItem title="Phase 3: Distribution points" amount="$42,000" status="funding" data-magicpath-id="92" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                     </SortableContainer>
-                    <SortableContainer dndKitId="db1ff531-aa69-4584-a943-629a1c4668de" containerType="regular" prevTag="div" className="flex flex-col gap-4" data-magicpath-id="93" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                      <SortableContainer dndKitId="060b9ff8-d717-4d8e-9b79-eaa4e892ec87" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="94" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                        <SortableContainer dndKitId="5ab43207-e4e3-4259-beba-8d8282d4e0ba" containerType="regular" prevTag="div" className="flex items-center justify-between" data-magicpath-id="95" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="94749e89-b148-4532-bf22-ceb277fbb33e" containerType="regular" prevTag="div" className="flex flex-col gap-4" data-magicpath-id="93" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="c7be2433-7f33-4dc5-a174-0ae7a7334c5b" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="94" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                        <SortableContainer dndKitId="0522bb6b-9b2f-4464-807a-f9089d67f0e1" containerType="regular" prevTag="div" className="flex items-center justify-between" data-magicpath-id="95" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                           <span className={cn('text-sm', muted)} data-magicpath-id="96" data-magicpath-path="SuikaMarketplaceLanding.tsx">Funding Progress</span>
                           <span className={cn('text-sm font-semibold', softGreen)} data-magicpath-id="97" data-magicpath-path="SuikaMarketplaceLanding.tsx">74%</span>
                         </SortableContainer>
-                        <SortableContainer dndKitId="30295496-7003-41c5-98e9-92ccf52ddce0" containerType="regular" prevTag="div" className="mt-2 h-3 w-full rounded-full bg-[#E9E3D8]" data-magicpath-id="98" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                        <SortableContainer dndKitId="325cba2f-b455-43ac-9c77-0519ba52ac5a" containerType="regular" prevTag="div" className="mt-2 h-3 w-full rounded-full bg-[#E9E3D8]" data-magicpath-id="98" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                           <div className="h-3 rounded-full bg-[#1F6B51]" style={{
                           width: '74%'
                         }} aria-hidden data-magicpath-id="99" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                         </SortableContainer>
-                        <SortableContainer dndKitId="2fd75511-684d-4460-a3e8-6aea61700e38" containerType="regular" prevTag="div" className="mt-2 flex items-center justify-between text-xs" data-magicpath-id="100" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                        <SortableContainer dndKitId="4b489ddc-247e-410a-9388-ec87b79d2f6d" containerType="regular" prevTag="div" className="mt-2 flex items-center justify-between text-xs" data-magicpath-id="100" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                           <span className={muted} data-magicpath-id="101" data-magicpath-path="SuikaMarketplaceLanding.tsx">$77,500 raised</span>
                           <span className={muted} data-magicpath-id="102" data-magicpath-path="SuikaMarketplaceLanding.tsx">of $105,500</span>
                         </SortableContainer>
                       </SortableContainer>
 
-                      <SortableContainer dndKitId="fb5c8e7c-b8e6-4dd2-a960-2273b2bfb81f" containerType="regular" prevTag="div" className="grid grid-cols-2 gap-3" data-magicpath-id="103" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                        <SortableContainer dndKitId="099e1d09-2527-40b7-a4af-8efdca252e7c" containerType="regular" prevTag="div" className={cn('flex items-center gap-2 rounded-xl border p-3', card, cardBorder)} data-magicpath-id="104" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="d85313a6-f622-433e-953c-48ec63d5f1a6" containerType="regular" prevTag="div" className="grid grid-cols-2 gap-3" data-magicpath-id="103" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                        <SortableContainer dndKitId="ab81f2d0-fa7a-4738-ac00-bdc0818e55b2" containerType="regular" prevTag="div" className={cn('flex items-center gap-2 rounded-xl border p-3', card, cardBorder)} data-magicpath-id="104" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                           <Users className={cn('h-4 w-4', accent)} data-magicpath-id="105" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-                          <SortableContainer dndKitId="7e8feeaa-69e3-4f87-9bab-c3c9b36c26ed" containerType="regular" prevTag="div" data-magicpath-id="106" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                          <SortableContainer dndKitId="4f43aa06-738e-49ab-aecb-2a5828ce9fe2" containerType="regular" prevTag="div" data-magicpath-id="106" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                             <div className={cn('text-sm font-semibold', beigeText)} data-magicpath-id="107" data-magicpath-path="SuikaMarketplaceLanding.tsx">1,340</div>
                             <div className={cn('text-xs', muted)} data-magicpath-id="108" data-magicpath-path="SuikaMarketplaceLanding.tsx">Donors</div>
                           </SortableContainer>
                         </SortableContainer>
-                        <SortableContainer dndKitId="6e8d2f39-f80b-4bde-b5d1-48b5c040cab8" containerType="regular" prevTag="div" className={cn('flex items-center gap-2 rounded-xl border p-3', card, cardBorder)} data-magicpath-id="109" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                        <SortableContainer dndKitId="a4734e3e-79e8-415d-b08f-535c907d704d" containerType="regular" prevTag="div" className={cn('flex items-center gap-2 rounded-xl border p-3', card, cardBorder)} data-magicpath-id="109" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                           <MapPin className={cn('h-4 w-4', accent)} data-magicpath-id="110" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-                          <SortableContainer dndKitId="d5adb08e-294f-4e26-b8b7-08397163e5c8" containerType="regular" prevTag="div" data-magicpath-id="111" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                          <SortableContainer dndKitId="2ef24f5f-6b11-4394-b3d4-9ac5715225b0" containerType="regular" prevTag="div" data-magicpath-id="111" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                             <div className={cn('text-sm font-semibold', beigeText)} data-magicpath-id="112" data-magicpath-path="SuikaMarketplaceLanding.tsx">Turkana, Kenya</div>
                             <div className={cn('text-xs', muted)} data-magicpath-id="113" data-magicpath-path="SuikaMarketplaceLanding.tsx">Impact region</div>
                           </SortableContainer>
                         </SortableContainer>
                       </SortableContainer>
 
-                      <SortableContainer dndKitId="3e015893-4ae4-4f92-a4cf-6b061751d664" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold shadow-sm', 'bg-[#1F6B51] text-white hover:bg-[#1a5b45] w-full')} data-magicpath-id="114" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="839d1f16-c009-450b-af0c-8a8826976b51" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold shadow-sm', 'bg-[#1F6B51] text-white hover:bg-[#1a5b45] w-full')} data-magicpath-id="114" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         Fund Phase 3
                         <ArrowRight className="h-4 w-4" data-magicpath-id="115" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       </SortableContainer>
@@ -292,16 +293,16 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                   </SortableContainer>
                 </SortableContainer>
 
-                {!isMobile && <div aria-hidden className="pointer-events-none absolute -right-10 -top-10 h-48 w-48 rounded-full bg-[#DDF3EA] blur-3xl opacity-70" data-magicpath-id="116" data-magicpath-path="SuikaMarketplaceLanding.tsx" />}
+                {!isMobile && <div aria-hidden className="pointer-events-none absolute -right-10 -top-10 h-48 w-48 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,_#DDF3EA_0%,_transparent_70%)] blur-3xl opacity-80" data-magicpath-id="116" data-magicpath-path="SuikaMarketplaceLanding.tsx" />}
               </SortableContainer>
             </SortableContainer>
           </Container>
         </SortableContainer>
 
-        <SortableContainer dndKitId="4096dd71-7a9b-4b8a-8003-dfd461c0d68a" containerType="regular" prevTag="section" id="trust" className="border-t border-[#E9E3D8]" data-magicpath-id="117" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="ea2213d0-3eb5-4789-aaf8-bcf7ca38d951" containerType="regular" prevTag="section" id="trust" className="border-t border-[#E4E8F0]" data-magicpath-id="117" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Container className="py-10 md:py-16" data-magicpath-id="118" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <SectionTitle eyebrow="Trust-first design" title="Verified organizations. Transparent milestones. On-chain accountability." subtitle="Every project undergoes NGO verification. Each milestone is a dynamic field on SUI, added as conditions evolve. Journalists and local verifiers attest to outcomes for credible impact." data-magicpath-id="119" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-            <SortableContainer dndKitId="547f99c8-0c09-4cc3-92f0-e116b6ac8c66" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-3 gap-4 md:gap-6" data-magicpath-id="120" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="4b38e59a-03b5-472d-9b2d-748bbb7270af" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-3 gap-4 md:gap-6" data-magicpath-id="120" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <Feature title="NGO Verification" description="Organizations pass a rigorous KYC and due diligence process before listing. Their reputation compounds over time." icon={<ShieldCheck className={cn('h-6 w-6', accent)} data-magicpath-id="122" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="121" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <Feature title="Dynamic Milestones" description="Projects evolve in the field. Add, update, and fund milestones dynamically using SUI's Dynamic Fields." icon={<TrendingUp className={cn('h-6 w-6', accent)} data-magicpath-id="124" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="123" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <Feature title="Independent Validation" description="Local journalists and auditors verify outcomes with media evidence and attestations recorded on-chain." icon={<Award className={cn('h-6 w-6', accent)} data-magicpath-id="126" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="125" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
@@ -309,27 +310,27 @@ export const SuikaMarketplaceLanding: React.FC = () => {
           </Container>
         </SortableContainer>
 
-        <SortableContainer dndKitId="18d9a0d7-7f5b-4abf-9b45-acaf97156130" containerType="regular" prevTag="section" id="projects" className="border-t border-[#E9E3D8]" data-magicpath-id="127" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="efebefdc-1d11-4f10-94f6-c98880fa0019" containerType="regular" prevTag="section" id="projects" className="border-t border-[#E4E8F0]" data-magicpath-id="127" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Container className="py-10 md:py-16" data-magicpath-id="128" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <SectionTitle eyebrow="Featured now" title="Humanitarian projects seeking support" subtitle="Discover trustworthy initiatives across regions and causes." data-magicpath-id="129" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
             <div className="mt-8 grid md:grid-cols-3 gap-5" data-magicpath-id="130" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-              {[1, 2, 3].map(i => <SortableContainer dndKitId="0100254e-59ea-49d7-8f45-668508039f6f" containerType="regular" prevTag="motion.article" key={i} whileHover={{
+              {[1, 2, 3].map(i => <SortableContainer dndKitId="d8e280e2-0661-4e08-acdc-a4d5eebdb107" containerType="regular" prevTag="motion.article" key={i} whileHover={{
               y: -6
-            }} className={cn('rounded-2xl overflow-hidden border', cardBorder, 'bg-white')} data-magicpath-id="131" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                  <SortableContainer dndKitId="ec509507-1f98-452f-a00b-a0c3e6352d4d" containerType="regular" prevTag="div" className="relative" data-magicpath-id="132" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            }} className={cn('rounded-2xl overflow-hidden border', cardBorder, 'bg-white/90 backdrop-blur-sm')} data-magicpath-id="131" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="624ab8be-cbbc-4196-9b7f-5884c50d3f35" containerType="regular" prevTag="div" className="relative" data-magicpath-id="132" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     <img src={i === 1 ? 'https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop' : i === 2 ? 'https://images.unsplash.com/photo-1593111774831-0952b2c5d5f0?q=80&w=1200&auto=format&fit=crop' : 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=1200&auto=format&fit=crop'} alt="Project cover" className="h-40 w-full object-cover" data-magicpath-id="133" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-                    <SortableContainer dndKitId="b9cc85fc-26f7-475f-a9a0-029574660aa5" containerType="regular" prevTag="div" className="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-xs bg-white/90" data-magicpath-id="134" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="fe985b74-1912-4c67-a999-ddc18f49dbd1" containerType="regular" prevTag="div" className="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-xs bg-white/80 backdrop-blur" data-magicpath-id="134" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <Globe2 className={cn('h-4 w-4', accent)} data-magicpath-id="135" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       <span className={cn('font-medium', beigeText)} data-magicpath-id="136" data-magicpath-path="SuikaMarketplaceLanding.tsx">Global South</span>
                     </SortableContainer>
                   </SortableContainer>
 
-                  <SortableContainer dndKitId="9661ec6d-8471-41cf-8bb3-ed269b1367d5" containerType="regular" prevTag="div" className="p-4" data-magicpath-id="137" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                    <SortableContainer dndKitId="6949c2cd-06f4-4837-a53b-7253ba4582c7" containerType="regular" prevTag="div" className="flex items-start justify-between gap-3" data-magicpath-id="138" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="48f81c7d-80ac-4140-b51e-b9be713194c6" containerType="regular" prevTag="div" className="p-4" data-magicpath-id="137" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="4c4f031e-ef96-4715-9d1d-526bb3202f49" containerType="regular" prevTag="div" className="flex items-start justify-between gap-3" data-magicpath-id="138" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <h3 className={cn('text-base font-semibold', beigeText)} data-magicpath-id="139" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         {i === 1 ? 'Cyclone Relief: Emergency Kits' : i === 2 ? 'Rural Health: Mobile Clinics' : 'Education Access: Solar Classroom'}
                       </h3>
-                      <SortableContainer dndKitId="cfad53c2-3379-4bb8-bbe5-ad9c1cd4e0b3" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px]', softGreenBg, accent)} data-magicpath-id="140" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="1868d7f6-71a1-4938-bc1e-bf3dee7d1672" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px]', softGreenBg, accent)} data-magicpath-id="140" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         <ShieldCheck className="h-3.5 w-3.5" data-magicpath-id="141" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                         Verified
                       </SortableContainer>
@@ -338,24 +339,24 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                       {i === 1 ? 'Distributing food, water purification, and shelter materials to families impacted by severe cyclones.' : i === 2 ? 'Operating mobile clinics to deliver essential primary care to underserved rural communities.' : 'Deploying solar-powered digital classrooms to improve access to quality learning.'}
                     </p>
 
-                    <SortableContainer dndKitId="93b4f645-dcdf-4b56-89ab-9bf5cd8f2ea8" containerType="regular" prevTag="div" className="mt-4" data-magicpath-id="143" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                      <SortableContainer dndKitId="539554d9-4a84-4f31-aa7b-23e0cbc51fb9" containerType="regular" prevTag="div" className="flex items-center justify-between text-xs" data-magicpath-id="144" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="3ad94b11-824b-44c3-8795-5bdb92fe6d81" containerType="regular" prevTag="div" className="mt-4" data-magicpath-id="143" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="44a40ceb-8af6-4203-bf73-9f5dcfa5bc80" containerType="regular" prevTag="div" className="flex items-center justify-between text-xs" data-magicpath-id="144" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         <span className={muted} data-magicpath-id="145" data-magicpath-path="SuikaMarketplaceLanding.tsx">Milestones funded</span>
                         <span className={cn('font-semibold', softGreen)} data-magicpath-id="146" data-magicpath-path="SuikaMarketplaceLanding.tsx">{i === 1 ? '3/5' : i === 2 ? '2/4' : '4/6'}</span>
                       </SortableContainer>
-                      <SortableContainer dndKitId="f126a0aa-9f10-4088-94c2-efcc5ff6937d" containerType="regular" prevTag="div" className="mt-1.5 h-2 w-full rounded-full bg-[#E9E3D8]" data-magicpath-id="147" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                        <div className="h-2 rounded-full bg-[#1F6B51]" style={{
+                      <SortableContainer dndKitId="09fa8097-7fd0-4ab7-a4e8-a6369dd1282d" containerType="regular" prevTag="div" className="mt-1.5 h-2 w-full rounded-full bg-[linear-gradient(90deg,_#E9EDF5_0%,_#E7F4EE_100%)]" data-magicpath-id="147" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                        <div className="h-2 rounded-full bg-[linear-gradient(90deg,_#1F6B51_0%,_#2BAA80_100%)]" style={{
                       width: i === 1 ? '60%' : i === 2 ? '45%' : '70%'
                     }} aria-hidden data-magicpath-id="148" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       </SortableContainer>
                     </SortableContainer>
 
-                    <SortableContainer dndKitId="df4b9946-b779-4feb-95a8-4e01a503835d" containerType="regular" prevTag="div" className="mt-4 flex items-center justify-between" data-magicpath-id="149" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                      <SortableContainer dndKitId="0aae43c6-7497-48c2-8f0a-3c2349a67175" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="150" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="675077d4-e83f-4c22-ad0b-1fd4235a251f" containerType="regular" prevTag="div" className="mt-4 flex items-center justify-between" data-magicpath-id="149" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="9c2df9df-0524-426f-9923-6338aa965582" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="150" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         <Users className={cn('h-4 w-4', accent)} data-magicpath-id="151" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                         <span className={cn('text-xs', muted)} data-magicpath-id="152" data-magicpath-path="SuikaMarketplaceLanding.tsx">{i === 1 ? '524' : i === 2 ? '312' : '781'} donors</span>
                       </SortableContainer>
-                      <SortableContainer dndKitId="14ee7187-1db4-46cd-89b8-0a310a7d0e4c" containerType="regular" prevTag="button" className={cn('inline-flex items-center gap-1 text-sm font-medium', accent)} data-magicpath-id="153" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="c878d93e-99e2-4bc7-aedd-0f0a695ecd2a" containerType="regular" prevTag="button" className={cn('inline-flex items-center gap-1 text-sm font-medium', accent)} data-magicpath-id="153" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         View project <ArrowUpRight className="h-4 w-4" data-magicpath-id="154" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       </SortableContainer>
                     </SortableContainer>
@@ -365,12 +366,12 @@ export const SuikaMarketplaceLanding: React.FC = () => {
           </Container>
         </SortableContainer>
 
-        <SortableContainer dndKitId="02d769fe-8ae6-427e-8e76-fd8c6bf0275f" containerType="regular" prevTag="section" id="how-it-works" className="border-t border-[#E9E3D8]" data-magicpath-id="155" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+        <SortableContainer dndKitId="a996a129-d493-44a3-906f-7d30e5ea55fb" containerType="regular" prevTag="section" id="how-it-works" className="border-t border-[#E4E8F0]" style={{
         display: "none"
-      }}>
+      }} data-magicpath-id="155" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Container className="py-10 md:py-16" data-magicpath-id="156" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <SectionTitle eyebrow="How SUIka works" title="A simple, transparent flow" subtitle="From project creation to impact verification, every step is recorded for accountability." data-magicpath-id="157" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-            <SortableContainer dndKitId="e5941d1a-6c99-4589-b32c-c4c952d18e49" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-3 gap-4 md:gap-6" data-magicpath-id="158" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="f7928d50-13bd-43b9-a192-a5126f4d3db3" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-3 gap-4 md:gap-6" data-magicpath-id="158" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <Feature title="1. NGO creates project" description="Approved NGOs publish a project and add its first milestone on-chain." icon={<HeartHandshake className={cn('h-6 w-6', accent)} data-magicpath-id="160" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="159" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <Feature title="2. Donors fund milestones" description="Backers fund specific phases as needs evolve, with funds locked to that milestone." icon={<TrendingUp className={cn('h-6 w-6', accent)} data-magicpath-id="162" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="161" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <Feature title="3. Journalists verify" description="Independent verifiers confirm outcomes with geo-tagged media and attestations." icon={<Award className={cn('h-6 w-6', accent)} data-magicpath-id="164" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="163" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
@@ -378,10 +379,10 @@ export const SuikaMarketplaceLanding: React.FC = () => {
           </Container>
         </SortableContainer>
 
-        <SortableContainer dndKitId="2df716fc-ef44-4cfe-b255-ab6be4bf22cc" containerType="regular" prevTag="section" id="impact" className="border-t border-[#E9E3D8]" data-magicpath-id="165" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="a2026302-0dbe-4d40-bb29-ea3022f88e63" containerType="regular" prevTag="section" id="impact" className="border-t border-[#E4E8F0]" data-magicpath-id="165" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Container className="py-10 md:py-16" data-magicpath-id="166" data-magicpath-path="SuikaMarketplaceLanding.tsx">
             <SectionTitle eyebrow="Impact in numbers" title="Scaling trust and outcomes" subtitle="SUIka’s transparent model accelerates funding and reduces overhead, so more resources reach those who need them most." data-magicpath-id="167" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-            <SortableContainer dndKitId="5ecdf0e7-fb74-481c-8d7d-52c854268e87" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-4 gap-4 md:gap-6" data-magicpath-id="168" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="ae66fc0a-be37-49d0-a4d3-523b119e51bd" containerType="regular" prevTag="div" className="mt-8 grid md:grid-cols-4 gap-4 md:gap-6" data-magicpath-id="168" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <Stat label="Avg. fee reduction" value="32%" icon={<TrendingUp className={cn('h-5 w-5', accent)} data-magicpath-id="170" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="169" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <Stat label="Verified milestones" value="9,842" icon={<CheckCircle2 className={cn('h-5 w-5', accent)} data-magicpath-id="172" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="171" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               <Stat label="Countries reached" value="52" icon={<Globe2 className={cn('h-5 w-5', accent)} data-magicpath-id="174" data-magicpath-path="SuikaMarketplaceLanding.tsx" />} data-magicpath-id="173" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
@@ -390,16 +391,16 @@ export const SuikaMarketplaceLanding: React.FC = () => {
           </Container>
         </SortableContainer>
 
-        <SortableContainer dndKitId="d4c63b4c-22e6-46f8-9baa-8076ecfa5cac" containerType="regular" prevTag="section" id="cta" className="border-t border-[#E9E3D8]" data-magicpath-id="177" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+        <SortableContainer dndKitId="4b1c70c7-5e6b-473b-9320-b89bc008192e" containerType="regular" prevTag="section" id="cta" className="border-t border-[#E4E8F0]" data-magicpath-id="177" data-magicpath-path="SuikaMarketplaceLanding.tsx">
           <Container className="py-10 md:py-16" data-magicpath-id="178" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-            <SortableContainer dndKitId="a6e88612-fc14-4d7a-88a9-927a3f61a6fa" containerType="regular" prevTag="div" className={cn('relative overflow-hidden rounded-2xl border p-6 md:p-10', 'bg-gradient-to-br from-[#EAF6F0] to-[#F8F4ED]', cardBorder)} data-magicpath-id="179" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="58e60688-13d3-4fdf-baa9-94f7ec39d275" containerType="regular" prevTag="div" className={cn('relative overflow-hidden rounded-2xl border p-6 md:p-10', 'bg-[linear-gradient(135deg,_#EAF6F0_0%,_#EEF4FF_60%,_#F8F4ED_100%)]', cardBorder)} data-magicpath-id="179" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               {!isMobile && <>
-                  <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#DDF3EA] blur-2xl opacity-70" data-magicpath-id="180" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
-                  <div className="pointer-events-none absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-[#F1E8D9] blur-2xl opacity-70" data-magicpath-id="181" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
+                  <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,_#DDF3EA_0%,_transparent_70%)] blur-2xl opacity-80" data-magicpath-id="180" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
+                  <div className="pointer-events-none absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,_#F1E8D9_0%,_transparent_70%)] blur-2xl opacity-80" data-magicpath-id="181" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                 </>}
 
-              <SortableContainer dndKitId="446ab61f-f165-4019-ae83-9e8e4991f971" containerType="regular" prevTag="div" className="relative grid md:grid-cols-2 gap-6 items-center" data-magicpath-id="182" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                <SortableContainer dndKitId="20611e48-ad40-49db-9c8e-7726ef591c27" containerType="regular" prevTag="div" data-magicpath-id="183" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+              <SortableContainer dndKitId="a9a948f5-3577-46a0-ab82-8ce9b846ba70" containerType="regular" prevTag="div" className="relative grid md:grid-cols-2 gap-6 items-center" data-magicpath-id="182" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                <SortableContainer dndKitId="9fe71520-3bb4-4e9b-a6d8-b01144ccae24" containerType="regular" prevTag="div" data-magicpath-id="183" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                   <div className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="184" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     For NGOs and Donors
                   </div>
@@ -408,8 +409,8 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                     NGOs: publish dynamic, transparent projects. Donors: fund with confidence and follow impact in real time.
                   </p>
 
-                  <SortableContainer dndKitId="8510abb2-f805-4711-aed9-8d606e708a06" containerType="regular" prevTag="div" className="mt-6 flex flex-col sm:flex-row gap-3" data-magicpath-id="187" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                    <SortableContainer dndKitId="25d00147-6b3c-4674-b660-585fa4421b97" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm md:text-base font-semibold shadow-sm', 'bg-[#1F6B51] text-white hover:bg-[#1a5b45]')} data-magicpath-id="188" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="cb774585-9c26-4e9a-8150-c29ed2bc8081" containerType="regular" prevTag="div" className="mt-6 flex flex-col sm:flex-row gap-3" data-magicpath-id="187" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="51755e85-e945-424c-b675-7d87f69db872" containerType="regular" prevTag="button" className={cn('inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm md:text-base font-semibold shadow-sm', 'bg-[linear-gradient(135deg,_#15664f_0%,_#1F6B51_50%,_#29906F_100%)] text-white hover:brightness-110')} data-magicpath-id="188" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       Apply as NGO
                       <ArrowRight className="h-4 w-4" data-magicpath-id="189" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                     </SortableContainer>
@@ -419,25 +420,25 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                   </SortableContainer>
                 </SortableContainer>
 
-                <SortableContainer dndKitId="74f691a0-f6cb-40cb-91a9-1a1401bc6eda" containerType="regular" prevTag="div" className="grid grid-cols-2 gap-3" data-magicpath-id="191" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                  <SortableContainer dndKitId="e348012c-84d5-48b9-b31e-971940cb2549" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="192" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                    <SortableContainer dndKitId="969c2d51-c9c0-41d4-a325-e336f7caf2a6" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="193" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                <SortableContainer dndKitId="c926b839-4d7c-439d-849a-ee0604df6974" containerType="regular" prevTag="div" className="grid grid-cols-2 gap-3" data-magicpath-id="191" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="7dac92da-0632-4c51-9373-16939f5795f7" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="192" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="9ce5ed7e-c983-4606-941e-8a3f3c69feae" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="193" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                       <ShieldCheck className={cn('h-5 w-5', accent)} data-magicpath-id="194" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       <span className={cn('text-sm font-semibold', beigeText)} data-magicpath-id="195" data-magicpath-path="SuikaMarketplaceLanding.tsx">Verified NGOs</span>
                     </SortableContainer>
                     <p className={cn('mt-2 text-sm', muted)} data-magicpath-id="196" data-magicpath-path="SuikaMarketplaceLanding.tsx">Rigorous checks and evolving reputation scores.</p>
                   </SortableContainer>
-                  <SortableContainer dndKitId="a02aad89-c103-4164-acb3-9bb450e61e87" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="197" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="eac062c2-c4cd-4092-93b4-39d873efc5b2" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="197" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     <Award className={cn('h-5 w-5', accent)} data-magicpath-id="198" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                     <div className={cn('mt-2 text-sm font-semibold', beigeText)} data-magicpath-id="199" data-magicpath-path="SuikaMarketplaceLanding.tsx">Independent Impact</div>
                     <p className={cn('text-sm', muted)} data-magicpath-id="200" data-magicpath-path="SuikaMarketplaceLanding.tsx">Journalist attestations for outcome validation.</p>
                   </SortableContainer>
-                  <SortableContainer dndKitId="403f4620-c829-43ba-8d84-7590238116b5" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="201" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="3e1af91f-bb20-471a-b4e0-537f8d40163c" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="201" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     <TrendingUp className={cn('h-5 w-5', accent)} data-magicpath-id="202" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                     <div className={cn('mt-2 text-sm font-semibold', beigeText)} data-magicpath-id="203" data-magicpath-path="SuikaMarketplaceLanding.tsx">Milestone Funding</div>
                     <p className={cn('text-sm', muted)} data-magicpath-id="204" data-magicpath-path="SuikaMarketplaceLanding.tsx">Targeted support for each project phase.</p>
                   </SortableContainer>
-                  <SortableContainer dndKitId="0ac2e300-e713-4a83-84ee-05ce4ee3e041" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="205" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                  <SortableContainer dndKitId="6d7cb4e9-150d-4c69-883c-5ab503e53776" containerType="regular" prevTag="div" className={cn('rounded-xl border p-4', card, cardBorder)} data-magicpath-id="205" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     <Globe2 className={cn('h-5 w-5', accent)} data-magicpath-id="206" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                     <div className={cn('mt-2 text-sm font-semibold', beigeText)} data-magicpath-id="207" data-magicpath-path="SuikaMarketplaceLanding.tsx">Global Access</div>
                     <p className={cn('text-sm', muted)} data-magicpath-id="208" data-magicpath-path="SuikaMarketplaceLanding.tsx">Optimized for mobile, low-bandwidth environments.</p>
@@ -449,16 +450,16 @@ export const SuikaMarketplaceLanding: React.FC = () => {
         </SortableContainer>
       </SortableContainer>
 
-      <SortableContainer dndKitId="363d1540-87e9-45b7-80ca-9497149a2180" containerType="regular" prevTag="footer" className="border-t border-[#E9E3D8]" data-magicpath-id="209" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      <SortableContainer dndKitId="46fe05f1-bcbc-4d99-b587-66cccfed7517" containerType="regular" prevTag="footer" className="border-t border-[#E4E8F0]" data-magicpath-id="209" data-magicpath-path="SuikaMarketplaceLanding.tsx">
         <Container className="py-8" data-magicpath-id="210" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-          <SortableContainer dndKitId="d08e9677-4b10-42cd-94c5-1b8662539d44" containerType="regular" prevTag="div" className="flex flex-col md:flex-row items-center justify-between gap-4" data-magicpath-id="211" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-            <SortableContainer dndKitId="46413a0c-8815-4a5b-9df3-d7c47473c70c" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="212" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-              <SortableContainer dndKitId="01d8b44d-148f-4910-83d4-d84c26b4a228" containerType="regular" prevTag="div" className={cn('h-8 w-8 rounded-lg flex items-center justify-center', softGreenBg)} aria-hidden data-magicpath-id="213" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+          <SortableContainer dndKitId="041697dc-63ab-4754-b6d8-b330c1eb14fc" containerType="regular" prevTag="div" className="flex flex-col md:flex-row items-center justify-between gap-4" data-magicpath-id="211" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="f91b5d8c-6eb5-4a5c-8b58-2a0375aeea6e" containerType="regular" prevTag="div" className="flex items-center gap-3" data-magicpath-id="212" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+              <SortableContainer dndKitId="7cc3b3cb-e46d-49c2-9789-fa9d06bbb470" containerType="regular" prevTag="div" className={cn('h-8 w-8 rounded-lg flex items-center justify-center', softGreenBg)} aria-hidden data-magicpath-id="213" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                 <HeartHandshake className={cn('h-4 w-4', accent)} data-magicpath-id="214" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               </SortableContainer>
               <div className={cn('text-sm', muted)} data-magicpath-id="215" data-magicpath-path="SuikaMarketplaceLanding.tsx">© {new Date().getFullYear()} SUIka. All rights reserved.</div>
             </SortableContainer>
-            <SortableContainer dndKitId="bf217e17-1d84-4c90-a0c0-3402d894d2df" containerType="regular" prevTag="div" className="flex items-center gap-4 text-sm" data-magicpath-id="216" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+            <SortableContainer dndKitId="e6c67b35-7918-4fe2-9ac0-924f55ca850d" containerType="regular" prevTag="div" className="flex items-center gap-4 text-sm" data-magicpath-id="216" data-magicpath-path="SuikaMarketplaceLanding.tsx">
               <a className={cn('hover:opacity-80', beigeText)} href="#privacy" data-magicpath-id="217" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                 Privacy
               </a>
@@ -466,7 +467,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                 Terms
               </a>
               <a className={cn('hover:opacity-80', beigeText, 'inline-flex items-center gap-1')} href="#status" data-magicpath-id="219" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                Status <span className={cn('h-2 w-2 rounded-full bg-[#1F6B51] inline-block')} aria-hidden data-magicpath-id="220" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
+                Status <span className={cn('h-2 w-2 rounded-full bg-[linear-gradient(180deg,_#1F6B51_0%,_#2BAA80_100%)] inline-block')} aria-hidden data-magicpath-id="220" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
               </a>
             </SortableContainer>
           </SortableContainer>
