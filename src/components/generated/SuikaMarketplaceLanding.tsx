@@ -32,9 +32,13 @@ export const SuikaMarketplaceLanding: React.FC = () => {
     subtitle,
     children
   }) => <SortableContainer dndKitId="5fbd7927-bbdc-4ac2-b9ef-7c21a4f72d72" containerType="regular" prevTag="div" className="space-y-6" data-magicpath-id="1" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-      {eyebrow ? <SortableContainer dndKitId="a210ac57-6eb9-4d77-beff-0947cdee7813" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="2" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+      {eyebrow ? <SortableContainer dndKitId="a210ac57-6eb9-4d77-beff-0947cdee7813" containerType="regular" prevTag="div" className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="2" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+      display: "none"
+    }}>
           <Sparkles className="h-4 w-4" aria-hidden />
-          <span data-magicpath-id="3" data-magicpath-path="SuikaMarketplaceLanding.tsx">{eyebrow}</span>
+          <span data-magicpath-id="3" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+        display: "none"
+      }}>{eyebrow}</span>
         </SortableContainer> : null}
       <SortableContainer dndKitId="04207f88-5344-401a-bee1-1cadc201143d" containerType="regular" prevTag="div" data-magicpath-id="4" data-magicpath-path="SuikaMarketplaceLanding.tsx">
         <h2 className={cn('text-2xl md:text-4xl font-semibold tracking-tight', beigeText)} data-magicpath-id="5" data-magicpath-path="SuikaMarketplaceLanding.tsx">{title}</h2>
