@@ -403,7 +403,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                   <div className={cn('inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm', softGreenBg, accent)} data-magicpath-id="184" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     For NGOs and Donors
                   </div>
-                  <h3 className={cn('mt-3 text-2xl md:text-3xl font-semibold', beigeText)} data-magicpath-id="185" data-magicpath-path="SuikaMarketplaceLanding.tsx">Join SUISTAINABLES trusted marketplace today</h3>
+                  <h3 className={cn('mt-3 text-2xl md:text-3xl font-semibold', beigeText)} data-magicpath-id="185" data-magicpath-path="SuikaMarketplaceLanding.tsx">Join Suistainables trusted marketplace</h3>
                   <p className={cn('mt-3 text-sm md:text-base', muted)} data-magicpath-id="186" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                     NGOs: publish dynamic, transparent projects. Donors: fund with confidence and follow impact in real time.
                   </p>
