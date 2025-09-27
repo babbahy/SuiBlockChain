@@ -335,23 +335,38 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                         Verified
                       </SortableContainer>
                     </SortableContainer>
-                    <p className={cn('mt-2 text-sm line-clamp-2', muted)} data-magicpath-id="142" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <p className={cn('mt-2 text-sm line-clamp-2', muted)} data-magicpath-id="142" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                  display: "none"
+                }}>
                       {i === 1 ? 'Distributing food, water purification, and shelter materials to families impacted by severe cyclones.' : i === 2 ? 'Operating mobile clinics to deliver essential primary care to underserved rural communities.' : 'Deploying solar-powered digital classrooms to improve access to quality learning.'}
                     </p>
 
-                    <SortableContainer dndKitId="6314f686-b2b6-48d8-abe4-e0927e37836a" containerType="regular" prevTag="div" className="mt-4" data-magicpath-id="143" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                      <SortableContainer dndKitId="2d82cee2-e149-463f-b0ec-4a10278b71ce" containerType="regular" prevTag="div" className="flex items-center justify-between text-xs" data-magicpath-id="144" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                        <span className={muted} data-magicpath-id="145" data-magicpath-path="SuikaMarketplaceLanding.tsx">Milestones funded</span>
+                    <SortableContainer dndKitId="6314f686-b2b6-48d8-abe4-e0927e37836a" containerType="regular" prevTag="div" className="mt-4" data-magicpath-id="143" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                  display: "none"
+                }}>
+                      <SortableContainer dndKitId="2d82cee2-e149-463f-b0ec-4a10278b71ce" containerType="regular" prevTag="div" className="flex items-center justify-between text-xs" data-magicpath-id="144" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                    display: "none"
+                  }}>
+                        <span className={muted} data-magicpath-id="145" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                      display: "none"
+                    }}>Milestones funded</span>
                         <span className={cn('font-semibold', softGreen)} data-magicpath-id="146" data-magicpath-path="SuikaMarketplaceLanding.tsx">{i === 1 ? '3/5' : i === 2 ? '2/4' : '4/6'}</span>
                       </SortableContainer>
-                      <SortableContainer dndKitId="46fb26c5-61b9-4275-8177-8af8b86f237d" containerType="regular" prevTag="div" className="mt-1.5 h-2 w-full rounded-full bg-[linear-gradient(90deg,_#E9EDF5_0%,_#E7F4EE_100%)]" data-magicpath-id="147" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                      <SortableContainer dndKitId="46fb26c5-61b9-4275-8177-8af8b86f237d" containerType="regular" prevTag="div" className="mt-1.5 h-2 w-full rounded-full bg-[linear-gradient(90deg,_#E9EDF5_0%,_#E7F4EE_100%)]" data-magicpath-id="147" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                    background: "linear-gradient(90deg, #FFFFFF 0%, #000000 100%)",
+                    display: "none"
+                  }}>
                         <div className="h-2 rounded-full bg-[linear-gradient(90deg,_#1F6B51_0%,_#2BAA80_100%)]" style={{
-                      width: i === 1 ? '60%' : i === 2 ? '45%' : '70%'
+                      width: i === 1 ? '60%' : i === 2 ? '45%' : '70%',
+                      background: "linear-gradient(90deg, #FFFFFF 0%, #000000 100%)",
+                      display: "none"
                     }} aria-hidden data-magicpath-id="148" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                       </SortableContainer>
                     </SortableContainer>
 
-                    <SortableContainer dndKitId="487f2e40-7fc6-4263-8500-f632d8a27f78" containerType="regular" prevTag="div" className="mt-4 flex items-center justify-between" data-magicpath-id="149" data-magicpath-path="SuikaMarketplaceLanding.tsx">
+                    <SortableContainer dndKitId="487f2e40-7fc6-4263-8500-f632d8a27f78" containerType="regular" prevTag="div" className="mt-4 flex items-center justify-between" data-magicpath-id="149" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
+                  display: "none"
+                }}>
                       <SortableContainer dndKitId="b0641f95-ab58-4525-b0aa-4958ac0c1532" containerType="regular" prevTag="div" className="flex items-center gap-2" data-magicpath-id="150" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                         <Users className={cn('h-4 w-4', accent)} data-magicpath-id="151" data-magicpath-path="SuikaMarketplaceLanding.tsx" />
                         <span className={cn('text-xs', muted)} data-magicpath-id="152" data-magicpath-path="SuikaMarketplaceLanding.tsx">{i === 1 ? '524' : i === 2 ? '312' : '781'} donors</span>
