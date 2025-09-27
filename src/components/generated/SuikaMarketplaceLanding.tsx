@@ -145,9 +145,8 @@ export const SuikaMarketplaceLanding: React.FC = () => {
             }} />
             </SortableContainer>
             <SortableContainer dndKitId="3c6f05c5-3dd9-4d2b-9c57-199a0ca66057" containerType="regular" prevTag="div" className="flex flex-col leading-tight" data-magicpath-id="47" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-              <span className={cn('text-lg md:text-xl font-semibold tracking-tight', beigeText)} data-magicpath-id="48" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                SUIstainables
-              </span>
+              <span className={cn('text-lg md:text-xl font-semibold tracking-tight', beigeText)} data-magicpath-id="48" data-magicpath-path="SuikaMarketplaceLanding.tsx">Suistainables
+            </span>
               <span className={cn('text-[11px] md:text-xs', muted)} data-magicpath-id="49" data-magicpath-path="SuikaMarketplaceLanding.tsx">Humanitarian Marketplace</span>
             </SortableContainer>
           </SortableContainer>
