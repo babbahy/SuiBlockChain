@@ -199,10 +199,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                 <h1 className={cn('mt-4 text-3xl md:text-5xl font-semibold tracking-tight', beigeText)} data-magicpath-id="66" data-magicpath-path="SuikaMarketplaceLanding.tsx">
                   Fund trusted humanitarian projects with real-time, verifiable progress
                 </h1>
-                <p className={cn('mt-4 text-base md:text-lg leading-relaxed', muted)} data-magicpath-id="67" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                  SUIka is a decentralized marketplace where verified NGOs publish projects with dynamic milestones.
-                  Donors fund specific phases and journalists validate real-world outcomes—for radical transparency.
-                </p>
+                <p className={cn('mt-4 text-base md:text-lg leading-relaxed', muted)} data-magicpath-id="67" data-magicpath-path="SuikaMarketplaceLanding.tsx">Suistainables is a decentralized marketplace where verified NGOs publish projects with dynamic milestones. Donors fund specific phases and journalists validate real-world outcomes—for radical transparency.</p>
 
                 <SortableContainer dndKitId="84bc63e4-a0d7-4364-aac7-ff04d497885d" containerType="regular" prevTag="div" className="mt-6 flex flex-col sm:flex-row gap-3" data-magicpath-id="68" data-magicpath-path="SuikaMarketplaceLanding.tsx" style={{
                 display: "none"
