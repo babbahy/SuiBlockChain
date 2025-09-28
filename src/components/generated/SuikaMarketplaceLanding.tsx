@@ -196,9 +196,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent'
-              }} data-magicpath-id="65" data-magicpath-path="SuikaMarketplaceLanding.tsx">
-                  Fund trusted humanitarian projects with real-time, verifiable progress
-                </h1>
+              }} data-magicpath-id="65" data-magicpath-path="SuikaMarketplaceLanding.tsx">Blockchain-secured donations, locked until real world impact is verified.</h1>
               </SortableContainer>
             </SortableContainer>
           </Container>
