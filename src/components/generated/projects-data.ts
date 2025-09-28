@@ -107,7 +107,7 @@ export const projects: Project[] = [
   {
     id: 'reforestation-drc',
     title: 'Community‑Led Reforestation & Agroforestry',
-    cover: 'https://res.cloudinary.com/dw5ba0va3/image/upload/v1759028696/Mouss-Abdoulaye_Plantain_kxh0ch.jpg',
+    cover: 'https://res.cloudinary.com/dw5ba0va3/image/upload/v1759028696/Moussa_Abdoulaye_Plantain_kxh0ch.jpg',
     location: 'Kivu, DR Congo',
     date: 'Q3 2026',
     summary: 'Restore degraded land, improve soil health, and create sustainable livelihoods.',
