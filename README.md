@@ -52,3 +52,25 @@ export default tseslint.config({
   },
 });
 ```
+
+## zkLogin Environment Variables
+
+To configure zkLogin integration, you need to set the following environment variables in a `.env` file at the root of `SuiBlockChain/suistainablesUI/`.
+
+- `VITE_ZK_CLIENT_ID`: **(Required)** Your OAuth 2.0 Client ID for the chosen identity provider (e.g., Google, Facebook). This is obtained when you register your application with the OAuth provider.
+  - *Example*: `VITE_ZK_CLIENT_ID="1234567890-abcdefghijkl.apps.googleusercontent.com"`
+- `VITE_ZK_REDIRECT_URL`: **(Required)** The URL where the OAuth provider redirects the user after authentication. This *must* match the `redirectUrl` configured with your OAuth provider. In this setup, it's typically `https://your-domain.com/zk-callback` or `http://localhost:5173/zk-callback` for local development.
+  - *Example*: `VITE_ZK_REDIRECT_URL="http://localhost:5173/zk-callback"`
+- `VITE_ZK_PROVER_URL`: **(Optional)** The URL of the Zero-Knowledge Proof (ZKP) prover service. If not provided, it defaults to `https://prover-dev.mystenlabs.com/v1`, which is suitable for **Devnet only**. For Testnet or Mainnet, you'll need to use Mysten Labs' production prover service (requires access) or run your own prover.
+  - *Example*: `VITE_ZK_PROVER_URL="https://prover.mystenlabs.com/v1"` (for Testnet/Mainnet, if you have access)
+
+### How to set up your `.env` file:
+
+1. Create a file named `.env` in the `SuiBlockChain/suistainablesUI/` directory.
+2. Add your environment variables to this file:
+
+   ```
+   VITE_ZK_CLIENT_ID="YOUR_GOOGLE_CLIENT_ID"
+   VITE_ZK_REDIRECT_URL="http://localhost:5173/zk-callback"
+   # VITE_ZK_PROVER_URL="https://prover.mystenlabs.com/v1"
+   ```

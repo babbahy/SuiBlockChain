@@ -29,7 +29,11 @@ export const SuikaMarketplaceLanding: React.FC = () => {
         <Container className="flex h-16 md:h-20 items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="flex flex-col leading-tight">
-              <span className={cn('text-lg md:text-xl font-semibold tracking-tight', beigeText)}>Suistainables</span>
+              <img
+                src="https://res.cloudinary.com/dw5ba0va3/image/upload/f_auto,q_auto,dpr_2.0,e_trim/v1759027072/Suika_A4_2_st56lb.png"
+                alt="Suistainables logo"
+                className="h-5 md:h-6 lg:h-7 w-auto object-contain"
+              />
               <span className={cn('text-[11px] md:text-xs', muted)}>Humanitarian Marketplace</span>
             </div>
           </div>
@@ -47,7 +51,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
               <span>Explore</span>
             </button>
             <button className={cn('inline-flex items-center gap-2 rounded-lg px-3 md:px-4 py-2 text-sm font-semibold shadow-sm', 'bg-[linear-gradient(135deg,_#15664f_0%,_#1F6B51_50%,_#29906F_100%)] text-white hover:brightness-110')}>
-              <span>Connect Wallet</span>
+              <span>Log in</span>
               <ArrowRight className="h-4 w-4" />
             </button>
           </div>
@@ -55,7 +59,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
       </header>
 
       <main>
-        <section className="relative overflow-hidden min-h-dvh flex items-center">
+        <section className="relative overflow-hidden min-h-dvh flex items-center" id="home">
           {/* Background embellishment: subtle gradients + logo marks */}
           <div className="pointer-events-none absolute inset-0 opacity-90" aria-hidden style={{
           background: 'radial-gradient(60% 40% at 0% 0%, rgba(29, 107, 81, 0.10) 0%, rgba(29, 107, 81, 0.00) 60%), radial-gradient(40% 30% at 100% 10%, rgba(200, 191, 175, 0.18) 0%, rgba(200, 191, 175, 0.00) 60%), radial-gradient(50% 40% at 100% 100%, rgba(33, 65, 120, 0.10) 0%, rgba(33, 65, 120, 0.00) 60%)'
@@ -95,6 +99,154 @@ export const SuikaMarketplaceLanding: React.FC = () => {
             </div>
           </Container>
         </section>
+
+        <section id="how" className="py-14 md:py-20">
+          <Container>
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className={cn('text-3xl md:text-5xl font-semibold tracking-tight', beigeText)} style={{
+                background: 'linear-gradient(90deg, #0F3E31 0%, #C8BFAF 100%)',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }}>How it works</h2>
+              <p className={cn('mt-3 md:mt-4 text-sm md:text-base', muted)}>A transparent, verification-first marketplace connecting NGOs, donors, and journalists.</p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              <div className={cn('rounded-2xl border bg-white p-5 md:p-6', cardBorder)}>
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg" style={{ background: '#E6F7F1' }}>
+                  <Globe2 className={cn('h-5 w-5', accent)} />
+                </div>
+                <h3 className={cn('mt-4 text-lg font-semibold', beigeText)}>For NGOs</h3>
+                <ul className={cn('mt-2 text-sm space-y-2', muted)}>
+                  <li>Project storefronts with rich listings</li>
+                  <li>Milestone tracking with clear timelines</li>
+                  <li>Request professional verification</li>
+                  <li>Build reputation across completed projects</li>
+                  <li>Receive funds tied to outcomes</li>
+                </ul>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5 md:p-6', cardBorder)}>
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg" style={{ background: '#E6F7F1' }}>
+                  <ShieldCheck className={cn('h-5 w-5', accent)} />
+                </div>
+                <h3 className={cn('mt-4 text-lg font-semibold', beigeText)}>For Donors</h3>
+                <ul className={cn('mt-2 text-sm space-y-2', muted)}>
+                  <li>Browse verified projects like a marketplace</li>
+                  <li>Fund specific projects you care about</li>
+                  <li>Get real-time updates & media</li>
+                  <li>See journalist-verified evidence of impact</li>
+                  <li>Track your portfolio of funded projects</li>
+                </ul>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5 md:p-6', cardBorder)}>
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg" style={{ background: '#E6F7F1' }}>
+                  <Award className={cn('h-5 w-5', accent)} />
+                </div>
+                <h3 className={cn('mt-4 text-lg font-semibold', beigeText)}>For Journalists</h3>
+                <ul className={cn('mt-2 text-sm space-y-2', muted)}>
+                  <li>Paid verification jobs (50–300 SUI)</li>
+                  <li>Build portfolio of impact stories</li>
+                  <li>Leverage local expertise</li>
+                  <li>Grow reputation through accurate reporting</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className={cn('rounded-2xl border bg-white p-5 md:p-6', cardBorder)}>
+                <h4 className={cn('text-base md:text-lg font-semibold', beigeText)}>Project listing process</h4>
+                <ol className={cn('mt-3 text-sm space-y-2 list-decimal pl-5', muted)}>
+                  <li>NGO creates a project with goal and budget</li>
+                  <li>Defines milestones with timelines</li>
+                  <li>Publishes in their Kiosk storefront</li>
+                  <li>Donors fund specific amounts toward the goal</li>
+                  <li>Funds held in escrow until milestones verified</li>
+                </ol>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5 md:p-6', cardBorder)}>
+                <h4 className={cn('text-base md:text-lg font-semibold', beigeText)}>Verification process</h4>
+                <ol className={cn('mt-3 text-sm space-y-2 list-decimal pl-5', muted)}>
+                  <li>NGO completes a milestone</li>
+                  <li>Community validation via zkLogin submissions</li>
+                  <li>Assigned journalist verifies on site</li>
+                  <li>Report submitted and recorded</li>
+                  <li>Funds released to NGO upon proof</li>
+                </ol>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        <section id="impact" className="py-14 md:py-20">
+          <Container>
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className={cn('text-3xl md:text-5xl font-semibold tracking-tight', beigeText)} style={{
+                background: 'linear-gradient(90deg, #0F3E31 0%, #C8BFAF 100%)',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }}>Impact</h2>
+              <p className={cn('mt-3 md:mt-4 text-sm md:text-base', muted)}>Funds are secured in escrow and released only after independent verification confirms impact.</p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <div className={cn('rounded-2xl border bg-white p-5 text-center', cardBorder)}>
+                <Sparkles className={cn('h-6 w-6 mx-auto', accent)} />
+                <div className={cn('mt-2 text-2xl font-semibold', beigeText)}>250+</div>
+                <div className={cn('text-xs', muted)}>Verified projects</div>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5 text-center', cardBorder)}>
+                <ShieldCheck className={cn('h-6 w-6 mx-auto', accent)} />
+                <div className={cn('mt-2 text-2xl font-semibold', beigeText)}>88%</div>
+                <div className={cn('text-xs', muted)}>Average NGO success rate</div>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5 text-center', cardBorder)}>
+                <TrendingUp className={cn('h-6 w-6 mx-auto', accent)} />
+                <div className={cn('mt-2 text-2xl font-semibold', beigeText)}>$4.2M</div>
+                <div className={cn('text-xs', muted)}>Funds secured in escrow</div>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5 text-center', cardBorder)}>
+                <Users className={cn('h-6 w-6 mx-auto', accent)} />
+                <div className={cn('mt-2 text-2xl font-semibold', beigeText)}>120k</div>
+                <div className={cn('text-xs', muted)}>Beneficiaries helped</div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        <section id="faq" className="py-14 md:py-20">
+          <Container>
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className={cn('text-3xl md:text-5xl font-semibold tracking-tight', beigeText)} style={{
+                background: 'linear-gradient(90deg, #0F3E31 0%, #C8BFAF 100%)',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }}>FAQ</h2>
+              <p className={cn('mt-3 md:mt-4 text-sm md:text-base', muted)}>Answers about funding, verification, and how Suistainables keeps projects accountable.</p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className={cn('rounded-2xl border bg-white p-5', cardBorder)}>
+                <div className={cn('font-semibold', beigeText)}>How are funds protected?</div>
+                <p className={cn('mt-2 text-sm', muted)}>Funds are held on‑chain in milestone-based escrow. Release happens only when independent verification confirms the milestone was completed.</p>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5', cardBorder)}>
+                <div className={cn('font-semibold', beigeText)}>Who verifies the impact?</div>
+                <p className={cn('mt-2 text-sm', muted)}>Professional journalists are assigned to visit the site, interview beneficiaries, and submit a public report. Community validation via zkLogin supplements this.</p>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5', cardBorder)}>
+                <div className={cn('font-semibold', beigeText)}>What can NGOs customize?</div>
+                <p className={cn('mt-2 text-sm', muted)}>NGOs run storefront Kiosks, define milestones, upload documentation, and build their reputation through consistent delivery.</p>
+              </div>
+              <div className={cn('rounded-2xl border bg-white p-5', cardBorder)}>
+                <div className={cn('font-semibold', beigeText)}>What do donors receive?</div>
+                <p className={cn('mt-2 text-sm', muted)}>Transparent progress, media updates, and final proof once journalists verify. Your portfolio tracks everything you’ve supported.</p>
+              </div>
+            </div>
+          </Container>
+        </section>
       </main>
 
       <footer>
@@ -104,7 +256,7 @@ export const SuikaMarketplaceLanding: React.FC = () => {
               <div className={cn('h-8 w-8 rounded-lg flex items-center justify-center', softGreenBg)} aria-hidden>
                 <HeartHandshake className={cn('h-4 w-4', accent)} />
               </div>
-              <div className={cn('text-sm', muted)}>© {new Date().getFullYear()} SUIka. All rights reserved.</div>
+              <div className={cn('text-sm', muted)}>© {new Date().getFullYear()} Suistainables All rights reserved.</div>
             </div>
             <div className="flex items-center gap-4 text-sm">
               <a className={cn('hover:opacity-80', beigeText)} href="#privacy">
