@@ -1,3 +1,90 @@
+# Suistainables – Humanitarian Marketplace on Sui
+
+Suistainables is a modern React (Vite) dApp that lets donors fund NGO projects. Funds are held in escrow on Sui (Move) and released after journalist‑verified milestones. The app supports zkLogin and traditional wallets.
+
+## Repository layout
+
+- `suistainablesUI/` – React + Vite frontend (production app)
+  - zkLogin, profile, mock mode, donation UI
+- `move/suistainable/` – Move packages (project_management, escrow_system, payment_processing, …)
+- Old `app/` (Next.js counter demo) has been removed from mainline usage
+
+## Quick start
+
+1) Install
+
+```
+cd SuiBlockChain/suistainablesUI
+npm install
+```
+
+2) Configure env
+
+Create `.env` in `suistainablesUI/`:
+```
+# zkLogin
+VITE_ZK_CLIENT_ID="YOUR_GOOGLE_CLIENT_ID"
+VITE_ZK_REDIRECT_URL="http://localhost:5173/zk-callback"
+# Optional: Mysten dev prover for Devnet
+# VITE_ZK_PROVER_URL="https://prover-dev.mystenlabs.com/v1"
+
+# Demo toggle
+# When set to 'mock', the donation flow is simulated (NOT on-chain)
+VITE_DEMO_MODE=off
+```
+
+3) Set Sui package IDs
+
+Edit `suistainablesUI/src/sui/constants.ts` and set your deployed package id(s):
+```
+export const DEVNET_SUISTAINABLE_PACKAGE_ID = "0x...";
+export const TESTNET_SUISTAINABLE_PACKAGE_ID = "0x...";
+```
+Make sure the wallet network matches the package id’s network.
+
+4) Run
+
+```
+npm run dev
+```
+Open `http://localhost:5173`.
+
+## Authentication
+
+- zkLogin: Green top‑bar button → OAuth → `/zk-callback` → enter salt → session active
+- Wallet: Standard Sui Wallet connect (still available in the shell header)
+- When signed in, the green top bar shows your address and links to `#/profile`
+
+## Projects & donations
+
+- Mock data lives in `src/components/generated/projects-data.ts`
+- Real donations require real on‑chain Project & Vault objects
+  - Dev helper (dev only): “Create All Projects On‑Chain (DEV)” button in the header
+    - Creates Project, creates Vault, binds Vault → logs IDs in console
+  - Alternatively, create and bind via Sui CLI
+- Funding a milestone
+  - Mock mode (`VITE_DEMO_MODE=mock`): donation is simulated
+  - Real mode: calls Move entry `payment_processing::donate(project, vault, payment_coin, amount)`
+
+## Profile – donations history
+
+- `#/profile` lists on‑chain donations by querying event type:
+  - `${sustainablePackageId}::project_management::DonationReceived`
+- Mock donations do not appear (they’re not written on‑chain)
+
+## Troubleshooting
+
+- Google 400 / missing id_token: ensure `VITE_ZK_REDIRECT_URL` EXACTLY matches the authorized redirect URI in Google Cloud Console; publish consent screen or add test users
+- `0x…undefined` / `ValiError: Invalid input`:
+  - Wrong/undefined package id or object id
+  - Ensure `TESTNET/DEVNET_SUISTAINABLE_PACKAGE_ID` is correct
+  - Ensure wallet network matches the package network
+- “No donations found”:
+  - Mock mode is on (turn `VITE_DEMO_MODE` off for real tx)
+  - You donated on a different network or with a different address
+
+---
+
 # Sui dApp Starter Template
 
 This dApp was created using `@mysten/create-dapp` that sets up a basic React
